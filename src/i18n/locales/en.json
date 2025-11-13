@@ -1,0 +1,398 @@
+{
+  "hero": {
+    "welcome": "Welcome to Nyala Villas",
+    "subtitle": "A Tulum-Inspired Haven in Bali",
+    "description": "A fusion of Mexican vibrancy and Moroccan mystique, steps from Nyang Nyang Beach",
+    "cta": "Reserve Your Villa Now",
+    "exploreVillas": "Explore Villas",
+    "bookCall": "Book a Discovery Call",
+    "watchVR": "Watch Virtual Tour",
+    "downloadGuide": "Download Investment Guide"
+  },
+  "valueProps": {
+    "ecoLuxury": {
+      "title": "Eco-Luxury Finishes",
+      "description": "Handcrafted Moroccan textures, sustainable materials, and Tulum-inspired design throughout."
+    },
+    "primeLocation": {
+      "title": "Prime Nyang Nyang Location",
+      "description": "Steps from one of Bali's most pristine beaches, surrounded by natural beauty and tranquility."
+    },
+    "strongROI": {
+      "title": "Strong Investment Returns",
+      "description": "16% rental ROI and 30% capital growth potential in Bali's thriving luxury market."
+    }
+  },
+  "villas": {
+    "heading": "Discover Your Dream Villa",
+    "subheading": "1, 2, and 3 Bedrooms Now AvailablE",
+    "oneBed": {
+      "title": "One-Bedroom Villa",
+      "subtitle": "Moroccan Infused Chic"
+    },
+    "twoBed": {
+      "title": "TWO-Bedroom Villa",
+      "subtitle": "More Space, Same Peace of Mind"
+    },
+    "threeBed": {
+      "title": "Three-Bedroom Villa",
+      "subtitle": "Coming Soon"
+    },
+    "threeBedA": {
+      "title": "Three-Bedroom Villa A",
+      "subtitle": "Premium Layout"
+    },
+    "threeBedB": {
+      "title": "Three-Bedroom Villa B",
+      "subtitle": "Garden View"
+    },
+    "viewGallery": "View Gallery",
+    "virtualTour": "Virtual Tour",
+    "exploreVilla": "Explore This Villa",
+    "exploreHint": "Hover over any villa to explore gallery and virtual tour",
+    "availableNow": "Limited availability • Reserve your villa today",
+    "images": "images"
+  },
+  "lifestyle": {
+    "heading": "A Harmonious Blend of Coastal Charm and Modern Luxury",
+    "description": "Nyala Villas brings together the best of Tulum's laid-back elegance and Mediterranean sophistication. Set just moments from Nyang Nyang Beach, our villas offer a lifestyle that combines relaxation with refined luxury. Step into a sanctuary that captures the beauty of nature, the vibrancy of culture, and the comfort of contemporary living."
+  },
+  "investment": {
+    "heading": "Unlock Exceptional Returns with Nyala Villas",
+    "description": "In a rapidly growing market, Nyala Villas offers a remarkable opportunity to achieve strong returns. Bali's thriving demand for high-quality, eco-conscious properties makes this investment not only a luxury purchase but a smart financial decision.",
+    "cta": "Download Investment Guide",
+    "ctaConsultation": "Schedule a Consultation",
+    "downloadGuide": "Download Investment Guide",
+    "scheduleConsultation": "Schedule a Consultation",
+    "tiles": {
+      "rentalROI": {
+        "title": "Rental ROI",
+        "description": "Backed by rising demand for eco-luxury villas in Bali's premium market."
+      },
+      "capitalGrowth": {
+        "title": "Capital Growth",
+        "description": "Off-plan pricing increases $20,000 at each construction milestone."
+      },
+      "flexiblePayment": {
+        "title": "Months Interest-Free",
+        "description": "Flexible 12-month payment plan designed to boost your ROI."
+      }
+    }
+  },
+  "whyBali": {
+    "heading": "Transparency, Appreciation, and flexible payment plans",
+    "points": {
+      "transparency": {
+        "title": "Transparent Pricing with Built-In Appreciation",
+        "description": "Secure your villa off-plan to maximize capital gain as prices increase by $20,000 at each construction milestone."
+      },
+      "flexible": {
+        "title": "Flexible Payment Options",
+        "description": "Enjoy peace of mind with our 12-month interest-free payment plan designed to boost your ROI and simplify your investment journey."
+      },
+      "expertise": {
+        "title": "Global Expertise & Local Knowledge",
+        "description": "Swatch Developments brings a decade of global experience to Bali's vibrant real estate market, ensuring value, transparency, and quality."
+      }
+    },
+    "cta": "schedule a consultation"
+  },
+  "offers": {
+    "heading": "Explore the Beauty of Nyala Villas",
+    "countdown": {
+      "heading": "Pre-Sale Opportunity Ending Soon",
+      "subtitle": "Limited availability at exclusive pre-launch pricing",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes"
+    },
+    "description": "With only 3 of 6 units remaining, now is the time to secure your spot. Enjoy a limited-time starting price of $359K with no-interest payments for 12 months. Act fast to take advantage of this offer before the price increases with each phase.",
+    "point1": "Only 3 of 6 units remaining",
+    "point2": "Starting at $359K with 12-month interest-free payment",
+    "point3": "Price increases $20K at each construction milestone",
+    "cta": "Claim Your Pre-Sale Offer"
+  },
+  "contact": {
+    "heading": "Ready to Invest in Nyala Villas?",
+    "email": "Email: sales@swatchdevelopments.com",
+    "phone": "Phone / Whatsapp +62 8195 9600 007",
+    "form": {
+      "firstName": "first name",
+      "lastName": "last name",
+      "email": "email address",
+      "phone": "Phone Number",
+      "preferredContact": "Preferred Method of Contact",
+      "submit": "submit"
+    }
+  },
+  "footer": {
+    "links": {
+      "about": "About Swatch Developments",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "book": "BOOK A DISCOVERY CALL",
+      "website": "WWW.NYALAVILLAS.COM"
+    }
+  },
+  "nav": {
+    "home": "HOME",
+    "lifestyle": "LIFESTYLE",
+    "villas": "VILLAS",
+    "investment": "INVESTMENT",
+    "whyBali": "WHY BALI",
+    "gallery": "GALLERY",
+    "offers": "OFFERS",
+    "contact": "CONTACT US"
+  },
+  "vr": {
+    "title": "Virtual Reality Tour",
+    "loading": "Loading virtual tour...",
+    "close": "Close",
+    "closeBackdrop": "Click to close VR tour",
+    "openNew": "Open in New Tab",
+    "openFull": "Open Full Screen",
+    "instructions": "Use mouse to navigate • Click and drag to look around",
+    "villa": {
+      "oneBed": "One-Bedroom Villa",
+      "twoBed": "Two-Bedroom Villa",
+      "threeBedA": "Three-Bedroom Villa A",
+      "threeBedB": "Three-Bedroom Villa B"
+    }
+  },
+  "gallery": {
+    "subtitle": "Architectural Visualization",
+    "close": "Close Gallery",
+    "closeBackdrop": "Click to close gallery",
+    "openVR": "Virtual Tour",
+    "previous": "Previous image",
+    "next": "Next image",
+    "imageCount": "{{current}} of {{total}}",
+    "filter": {
+      "all": "All",
+      "exterior": "Exterior",
+      "interior": "Interior"
+    },
+    "category": {
+      "exterior": "Exterior View",
+      "interior": "Interior View"
+    }
+  },
+  "listing": {
+    "statusBar": {
+      "of": "OF",
+      "units": "UNITS",
+      "sold": "SOLD",
+      "subtitle": "{{percentage}}% sold • {{available}} units available",
+      "available": "Available",
+      "held": "Held"
+    },
+    "hero": {
+      "title": "Nyala Villas Collection",
+      "subtitle": "Find your perfect villa in paradise"
+    },
+    "filter": {
+      "units": "Units"
+    },
+    "viewMode": {
+      "grid": "Grid",
+      "plan": "Plan",
+      "list": "List"
+    },
+    "card": {
+      "addToShortlist": "Add to shortlist",
+      "shortlistedBy": "Shortlisted by {{count}} others",
+      "floor": "{{floor}} Floor",
+      "moreInfo": "More Info",
+      "reserve": "Reserve"
+    },
+    "results": "Showing {{count}} of {{total}} units",
+    "filtersApplied": "filters applied",
+    "empty": {
+      "title": "No units match your filters",
+      "description": "Try adjusting your search or filters to see more available units.",
+      "reset": "Reset Filters"
+    }
+  },
+  "explore": {
+    "search": {
+      "placeholder": "Search by unit code, floor, type...",
+      "label": "Search units"
+    },
+    "filters": {
+      "label": "Filter options"
+    },
+    "sort": {
+      "label": "Sort",
+      "toggleDirection": "Toggle sort direction"
+    },
+    "map": {
+      "floor": "Floor",
+      "reset": "Reset view",
+      "floorPlan": "Floor Plan View",
+      "floorPlanDesc": "2D floor plan visualization",
+      "vrTitle": "Virtual Reality Tour",
+      "noVR": "VR tour not available for this floor",
+      "available": "Available",
+      "held": "Held",
+      "sold": "Sold"
+    },
+    "results": {
+      "title": "Available Units",
+      "count": "{{count}} units available"
+    },
+    "empty": {
+      "title": "No Units Match Your Criteria",
+      "description": "Try adjusting your search or filters to see more available units.",
+      "reset": "Reset All Filters"
+    },
+    "list": {
+      "results": "{{count}} units found",
+      "empty": {
+        "title": "No units found",
+        "description": "Try adjusting your filters to see more units."
+      }
+    },
+    "unit": {
+      "status": {
+        "available": "Available",
+        "held": "Held",
+        "sold": "Sold"
+      },
+      "floor": "Floor",
+      "type": "Type",
+      "area": "Area",
+      "orientation": "Orientation",
+      "price": "Price",
+      "shortlist": "Shortlist",
+      "reserve": "Reserve Now",
+      "heldUntil": "Held until"
+    }
+  },
+  "unitDetail": {
+    "close": "Close",
+    "closeBackdrop": "Click to close",
+    "share": "Share unit",
+    "held": {
+      "countdown": "Held for"
+    },
+    "notify": "Notify when available",
+    "tabs": {
+      "overview": "Overview",
+      "payment": "Payment Info",
+      "gallery": "Gallery",
+      "documents": "Documents"
+    },
+    "overview": {
+      "details": "Unit Details",
+      "pricing": "Pricing",
+      "features": "Features"
+    },
+    "payment": {
+      "title": "Payment Information",
+      "description": "Payment details and financing options will be displayed here."
+    },
+    "gallery": {
+      "title": "Unit Gallery",
+      "empty": "No images available"
+    },
+    "documents": {
+      "title": "Documents",
+      "empty": "No documents available"
+    }
+  },
+  "reserve": {
+    "title": "Reserve Your Villa",
+    "unitCode": "Unit Code",
+    "type": "Type",
+    "floor": "Floor",
+    "area": "Area",
+    "totalPrice": "Total Price",
+    "feeNotice": "A reservation fee will be required to proceed with payment.",
+    "summary": "Reservation Summary",
+    "cancel": "Cancel",
+    "confirmCancel": "Are you sure you want to cancel this reservation?",
+    "unitNotFound": "Unit not found",
+    "backToExplore": "Back to Explore",
+    "expired": "Your reservation has expired",
+    "comingSoon": "Full implementation coming soon...",
+    "proceedToPayment": "Proceed to Payment",
+    "completePayment": "Complete Payment",
+    "countdown": {
+      "message": "Your unit is held",
+      "messageWithUnit": "Unit {{code}} is held for you",
+      "remaining": "remaining",
+      "viewUnit": "View Unit"
+    },
+    "step": {
+      "info": "Your Info",
+      "review": "Review",
+      "payment": "Payment"
+    },
+    "info": {
+      "title": "Your Information",
+      "description": "Please provide your contact information to proceed with the reservation."
+    },
+    "review": {
+      "title": "Review & Confirm",
+      "description": "Please review your information and accept the terms."
+    },
+    "payment": {
+      "title": "Payment",
+      "description": "Select your payment method to complete the reservation."
+    }
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "submit": "Submit"
+  },
+  "confirm": {
+    "downloadError": "Failed to download receipt. Please try again.",
+    "success": {
+      "title": "Reservation Confirmed",
+      "description": "Your villa has been successfully reserved. We've sent your confirmation and next steps to your email.",
+      "downloadReceipt": "Download Receipt (PDF)",
+      "viewReservation": "View Your Reservation",
+      "bookCall": "Book a Welcome Call",
+      "note": "Our team will contact you within 24 hours to guide you through the next steps."
+    },
+    "failed": {
+      "title": "Payment Failed",
+      "description": "We couldn't process your payment.",
+      "remainingTime": "You still have time remaining to complete your reservation before the unit is released.",
+      "tryAgain": "Try Again",
+      "chooseAnother": "Choose Another Payment Method",
+      "contactSupport": "Contact Support"
+    },
+    "pending": {
+      "title": "Payment Pending",
+      "description": "We're verifying your payment. This normally takes less than 2 minutes.",
+      "locked": "Your reservation remains locked",
+      "notify": "We'll notify you as soon as your payment clears",
+      "checking": "Checking payment status...",
+      "backToExplore": "Back to Explore"
+    },
+    "receipt": {
+      "title": "Reservation Receipt",
+      "orderId": "Order ID",
+      "unitDetails": "Unit Details",
+      "unit": "Unit",
+      "type": "Type",
+      "floor": "Floor",
+      "paymentDetails": "Payment Details",
+      "amount": "Amount Paid",
+      "time": "Time",
+      "status": "Status",
+      "buyerDetails": "Buyer Information",
+      "name": "Name",
+      "email": "Email",
+      "note": "A confirmation email has been sent to your registered email address.",
+      "status.reserved": "Reserved & Locked",
+      "status.confirmed": "Confirmed",
+      "status.pending": "Pending Verification"
+    }
+  }
+}
+
