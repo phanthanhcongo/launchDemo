@@ -10,63 +10,41 @@ export interface FilterChip {
 }
 
 export interface FilterChipsProps {
-  /**
-   * Selected filter values
-   */
   selected: Set<string>;
-  /**
-   * Callback when filter is toggled
-   */
   onToggle: (chip: FilterChip) => void;
-  /**
-   * Available filters to display
-   */
   filters: FilterChip[];
-  /**
-   * Additional CSS classes
-   */
   className?: string;
 }
 
-/**
- * FilterChips Component
- *
- * Quick filter chips for unit exploration.
- * Supports multiple selection with visual feedback.
- *
- * @example
- * ```tsx
- * <FilterChips
- *   selected={selectedFilters}
- *   onToggle={handleToggleFilter}
- *   filters={availableFilters}
- * />
- * ```
- */
 export function FilterChips({ selected, onToggle, filters, className }: FilterChipsProps) {
   const { t } = useTranslation();
 
   return (
-    <div className={cn('flex flex-wrap gap-2 sm:gap-3', className)} role="group" aria-label={t('explore.filters.label', 'Filter options')}>
+    <div
+      className={cn(
+        'flex flex-wrap gap-2 sm:gap-5',
+        className
+      )}
+      role="group"
+      aria-label={t('explore.filters.label', 'Filter options')}
+    >
       {filters.map((chip) => {
         const isSelected = selected.has(chip.id);
-        
+
         return (
-          <Button
+          <button
             key={chip.id}
-            intent={isSelected ? 'primary' : 'ghost'}
-            size="sm"
             onClick={() => onToggle(chip)}
-            className={cn(
-              'transition-all',
-              isSelected && 'ring-2 ring-primary'
-            )}
             aria-pressed={isSelected}
+            className={cn(
+              'px-4 py-1.5 rounded-md text-sm font-medium transition-all',
+              isSelected
+                ? 'bg-[#b4533a] text-[#fff7ed] border-[#b4533a]'
+                : ''
+            )}
           >
-            <Text variant="caption">
-              {chip.label}
-            </Text>
-          </Button>
+            {chip.label}
+          </button>
         );
       })}
     </div>

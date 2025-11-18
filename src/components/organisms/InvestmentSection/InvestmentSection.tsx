@@ -116,7 +116,11 @@ export function InvestmentSection({ className, onDownloadClick }: InvestmentSect
             intent="secondary"
             size="lg"
             onClick={onDownloadClick}
-            className="w-full sm:w-auto min-w-[240px]"
+            className={
+              cn("w-full sm:w-auto min-w-[240px]",
+                "text-white backdrop-blur-sm text-white backdrop-blur-sm",
+                "bg-[#b4533acc] hover:bg-[#b4533aee] border border-none")
+            }
           >
             {t('investment.downloadGuide', 'Download Investment Guide')}
           </Button>

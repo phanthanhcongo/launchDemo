@@ -39,48 +39,77 @@ export interface ViewModeToggleProps {
 export function ViewModeToggle({ mode, onChange, className }: ViewModeToggleProps) {
   const { t } = useTranslation();
 
-  const modes: { id: ViewMode; label: string; icon: JSX.Element }[] = [
+  const modes: { id: ViewMode; label: string; icon: (active: boolean) => JSX.Element }[] = [
     {
       id: 'grid',
       label: t('listing.viewMode.grid', 'Grid'),
-      icon: <Squares2X2Icon size="md" />,
+      icon: (active) => (
+        <Squares2X2Icon
+          size="md"
+          className={active ? 'text-[#fff7ed]' : 'text-[#b4533a]'}
+        />
+      ),
     },
     {
       id: 'plan',
       label: t('listing.viewMode.plan', 'Plan'),
-      icon: <MapIcon size="md" />,
+      icon: (active) => (
+        <MapIcon
+          size="md"
+          className={active ? 'text-[#fff7ed]' : 'text-[#b4533a]'}
+        />
+      ),
     },
     {
       id: 'list',
       label: t('listing.viewMode.list', 'List'),
-      icon: <Bars3Icon size="md" />,
+      icon: (active) => (
+        <Bars3Icon
+          size="md"
+          className={active ? 'text-[#fff7ed]' : 'text-[#b4533a]'}
+        />
+      ),
     },
   ];
 
   return (
-    <div className={cn('inline-flex items-center gap-2 bg-surface border border-primary/20 rounded-lg p-1', className)}>
-      {modes.map((item) => (
-        <button
-          key={item.id}
-          onClick={() => onChange(item.id)}
-          className={cn(
-            'flex items-center gap-2 px-4 py-2 rounded-md transition-all duration-200',
-            'hover:bg-primary/5',
-            mode === item.id
-              ? 'bg-primary text-surface shadow-md'
-              : 'text-primary/70'
-          )}
-          aria-label={item.label}
-          aria-pressed={mode === item.id}
-        >
-          {item.icon}
-          <Text variant="caption" className="hidden sm:block font-medium">
-            {item.label}
-          </Text>
-        </button>
-      ))}
+    <div className={cn(
+      'inline-flex items-center gap-2 rounded-lg p-1 bg-[#fff7ed]',
+      className
+    )}>
+      {modes.map((item) => {
+        const active = mode === item.id;
+
+        return (
+          <button
+            key={item.id}
+            onClick={() => onChange(item.id)}
+            aria-label={item.label}
+            aria-pressed={active}
+            className={cn(
+              'flex items-center gap-2 px-4 py-2 rounded-md transition-all duration-200',
+              active
+                ? 'bg-[#b4533a] text-[#fff7ed]'
+                : 'text-[#b4533a]'
+            )}
+          >
+            {item.icon(active)}
+
+            <Text
+              variant="caption"
+              className={cn(
+                'hidden sm:block font-medium',
+                active ? 'text-[#fff7ed]' : 'text-[#b4533a]'
+              )}
+            >
+              {item.label}
+            </Text>
+          </button>
+        );
+      })}
     </div>
   );
 }
+
 
 ViewModeToggle.displayName = 'ViewModeToggle';

@@ -46,10 +46,10 @@ export function OffersSection({
       <div className="relative z-10 container mx-auto px-4 md:px-16">
         {/* Header - Centered */}
         <div className="text-center mb-12 md:mb-16">
-          <Text variant="h1" className="mb-4 text-primary font-bold">
+          <Text variant="h1" className="mb-4 text-primary font-bold text-center">
             {t('offers.countdown.heading', 'Pre-Sale Opportunity Ending Soon')}
           </Text>
-          <Text variant="body" className="text-primary/80 max-w-2xl mx-auto text-lg">
+          <Text variant="body" className="text-primary/80 max-w-2xl mx-auto text-lg text-center">
             {t('offers.countdown.subtitle', 'Limited availability at exclusive pre-launch pricing')}
           </Text>
         </div>

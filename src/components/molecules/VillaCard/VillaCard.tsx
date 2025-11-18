@@ -84,60 +84,51 @@ export function VillaCard({
         aria-label={`Explore ${villa.name}`}
       >
         {/* Image */}
+        {/* IMAGE */}
         <div className="relative w-full" style={{ aspectRatio }}>
           <Image
             src={previewImage}
             alt={villa.name}
             objectFit="cover"
-            className="transition-transform duration-700 ease-out group-hover:scale-110"
+            className="transition-transform duration-700 ease-out group-hover:scale-110 opacity-20"
           />
-          
-          {/* Enhanced Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/50 to-transparent group-hover:from-surface/95 group-hover:via-surface/70 transition-all duration-500" />
-          
-          {/* Subtle overlay on hover for better button visibility */}
-          <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          {/* Hover Actions - Enhanced UX */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-            <div className="flex flex-col gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+          {/* FIXED OVERLAY - SOFT LUXURY GRADIENT */}
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/98 via-surface/95 to-surface/98"
+          />
+
+          {/* BUTTONS ON TOP */}
+          <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 
+          group-hover:opacity-100 transition-all">
+
+            <div className="flex flex-col gap-3 transform translate-y-4 group-hover:translate-y-0 
+              transition-transform">
+
               <Button
-                intent="primary"
-                size="md"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsGalleryOpen(true);
-                }}
-                className="backdrop-blur-md bg-surface/95 hover:bg-surface shadow-lg px-6 py-3 min-w-[160px] transition-all duration-300 hover:scale-105"
+                onClick={(e) => { e.stopPropagation(); setIsGalleryOpen(true); }}
+                className="backdrop-blur-md bg-white/20 text-gray border border-white/40
+                   hover:bg-white/30 px-6 py-3 min-w-[160px]"
               >
-                <Text variant="caption" className="font-medium">
-                  {t('villas.viewGallery', 'View Gallery')}
-                </Text>
+                View Gallery
               </Button>
 
               <Button
-                intent="secondary"
-                size="md"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsVROpen(true);
-                }}
-                className="backdrop-blur-md bg-secondary/95 hover:bg-secondary shadow-lg px-6 py-3 min-w-[160px] transition-all duration-300 hover:scale-105"
+                onClick={(e) => { e.stopPropagation(); setIsVROpen(true); }}
+                className="backdrop-blur-md bg-white/20 text-gray border border-white/40
+                   hover:bg-white/30 px-6 py-3 min-w-[160px]"
               >
-                <Text variant="caption" className="text-surface font-medium">
-                  {t('villas.virtualTour', 'Virtual Tour')}
-                </Text>
+                Virtual Tour
               </Button>
+
             </div>
           </div>
         </div>
-
         {/* Text Content - Enhanced */}
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 space-y-2 transform translate-y-0 group-hover:translate-y-0 transition-transform duration-500">
           <Text variant="h3" color="primary" className="text-left font-medium group-hover:font-semibold transition-all duration-300">
             {t(`villas.${villa.type.replace('-', '')}.title`, villa.name)}
           </Text>
-          <Text variant="body" color="primary" className="text-left text-primary/90 group-hover:text-primary transition-colors duration-300">
+          <Text variant="body" color="primary" className="text-left text-primary/90 group-hover:text-primary transition-colors duration-300 ">
             {t(`villas.${villa.type.replace('-', '')}.subtitle`, villa.subtitle)}
           </Text>
 
