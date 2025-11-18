@@ -78,7 +78,7 @@ export function Header({ className }: HeaderProps) {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-fixed transition-all duration-300',
-        isScrolled && 'bg-surface/80 backdrop-blur-md shadow-lg',
+        'bg-[#b4533a99] backdrop-blur-md shadow-lg',
         className
       )}
     >
@@ -100,19 +100,11 @@ export function Header({ className }: HeaderProps) {
               className="focus-ring rounded-sm block"
               aria-label="Nyala Villas Home"
             >
-              {isScrolled ? (
                 <Image
                   src="/images/logo-primary.svg"
                   alt="Nyala Villas"
                   className="w-[141px] h-[100px] object-contain"
                 />
-              ) : (
-                <Image
-                  src="/images/logo-white.svg"
-                  alt="Nyala Villas"
-                  className="w-[141px] h-[100px] object-contain"
-                />
-              )}
             </a>
           </div>
 

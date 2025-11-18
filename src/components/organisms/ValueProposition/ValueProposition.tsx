@@ -3,6 +3,7 @@ import { Text } from '@/components/atoms';
 import { ResponsiveContainer, ResponsiveGrid } from '@/components/ui';
 import { cn } from '@/lib/cn';
 
+
 export interface ValuePropositionProps {
   className?: string;
 }
@@ -47,6 +48,7 @@ export function ValueProposition({ className }: ValuePropositionProps) {
       className={cn(
         'relative bg-surface py-16 sm:py-20 md:py-24 lg:py-28',
         'border-y border-primary/10',
+        'bg-[#fff7ed] backdrop-blur-md',
         className
       )}
     >
@@ -56,9 +58,14 @@ export function ValueProposition({ className }: ValuePropositionProps) {
             <div
               key={prop.id}
               className={cn(
-                'text-center space-y-4 sm:space-y-6 p-4 sm:p-6 rounded-lg',
-                'transition-all duration-500 hover:bg-primary/5 hover:shadow-lg',
-                'opacity-0 animate-fade-in-up'
+                "text-center space-y-4 sm:space-y-6 p-4 sm:p-6 rounded-lg",
+                "transition-all duration-500",
+                "bg-white border border-primary/10",
+                "shadow-[0_8px_10px_0_#8B4513aa]",
+                "hover:-translate-y-2 hover:scale-[1.03]",
+                "hover:shadow-[0_20px_35px_-5px_#8B4513aa]",
+                "hover:bg-primary/5",
+                "opacity-0 animate-fade-in-up"
               )}
               style={{
                 animationDelay: `${index * 150}ms`,
@@ -90,12 +97,12 @@ export function ValueProposition({ className }: ValuePropositionProps) {
               </div>
 
               {/* Title */}
-              <Text variant="h4" className="text-primary font-bold text-lg sm:text-xl">
+              <Text variant="h4" className="text-primary font-bold text-lg sm:text-xl text-center">
                 {t(prop.titleKey)}
               </Text>
 
               {/* Description */}
-              <Text variant="body" className="text-primary/80 leading-relaxed text-sm sm:text-base">
+              <Text variant="body" className="text-primary/80 leading-relaxed text-sm sm:text-base text-center">
                 {t(prop.descKey)}
               </Text>
             </div>

@@ -46,20 +46,20 @@ export function Hero({ className, onExploreVillas, onBookCall }: HeroProps) {
         <div className="max-w-[1367px] mx-auto space-y-12 text-center">
           {/* Main Heading */}
           <div className="space-y-6">
-            <Text variant="h1" className="text-white drop-shadow-2xl font-bold">
+            <Text variant="h1" className="text-white drop-shadow-2xl font-bold text-center">
               {t('hero.welcome')}
             </Text>
 
             {/* Decorative Lines */}
             <div className="flex items-center justify-center gap-4 max-w-[719px] mx-auto">
               <Line className="flex-1 bg-white/60" />
-              <Text variant="h2" className="px-4 whitespace-nowrap text-white font-semibold">
+              <Text variant="h2" className="px-4 whitespace-nowrap text-white font-semibold text-center">
                 {t('hero.subtitle')}
               </Text>
               <Line className="flex-1 bg-white/60" />
             </div>
 
-            <Text variant="body" className="max-w-[1093px] mx-auto text-white/95 text-lg">
+            <Text variant="body" className="max-w-[1093px] mx-auto text-white/95 text-lg text-center">
               {t('hero.description')}
             </Text>
           </div>
@@ -70,7 +70,11 @@ export function Hero({ className, onExploreVillas, onBookCall }: HeroProps) {
               intent="primary"
               size="lg"
               onClick={onExploreVillas}
-              className="w-full sm:w-auto min-w-[240px]"
+              className={cn(
+                "w-full sm:w-auto min-w-[240px]", 
+                "text-white backdrop-blur-sm text-white backdrop-blur-sm",
+                "bg-[#b4533acc] hover:bg-[#b4533aee] border border-none"
+              )}
             >
               {t('hero.exploreVillas', 'Explore Villas')}
             </Button>
@@ -78,7 +82,12 @@ export function Hero({ className, onExploreVillas, onBookCall }: HeroProps) {
               intent="secondary"
               size="lg"
               onClick={onBookCall}
-              className="w-full sm:w-auto min-w-[240px]"
+              className={cn(
+                'w-full sm:w-auto min-w-[240px]', 
+                'border border-white/60 text-white',
+                'text-white hover:bg-white/10',
+                'backdrop-blur-sm'
+              )}
             >
               {t('hero.bookCall', 'Book a Discovery Call')}
             </Button>
