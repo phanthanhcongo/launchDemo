@@ -1,5 +1,4 @@
-import { Text } from "@/components/atoms";
-import { SearchBar } from "@/components/molecules";
+import { SearchBar, UserMenu } from "@/components/molecules";
 import { cn } from "@/lib/cn";
 import { useState } from "react";
 
@@ -75,16 +74,19 @@ export function StatusSummaryBar({
           </span>
         </div>
 
-        {/* RIGHT SEARCH BAR */}
-        <div className="w-full max-w-xs sm:max-w-sm">
-          <SearchBar
-            value={localSearch}
-            onChange={setLocalSearch}
-            placeholder="Search by unit code, floor, type..."
-            className="w-full bg-white shadow-md rounded-full"
-            units={[]}        // nếu component yêu cầu
-            onUnitSelect={() => { }} // nếu yêu cầu
-          />
+        {/* RIGHT SEARCH BAR + USER MENU */}
+        <div className="flex items-center gap-3">
+          <div className="w-full max-w-xs sm:max-w-sm">
+            <SearchBar
+              value={localSearch}
+              onChange={setLocalSearch}
+              placeholder="Search by unit code, floor, type..."
+              className="w-full bg-white shadow-md rounded-full"
+              units={[]}        // nếu component yêu cầu
+              onUnitSelect={() => { }} // nếu yêu cầu
+            />
+          </div>
+          <UserMenu />
         </div>
       </div>
     </div>

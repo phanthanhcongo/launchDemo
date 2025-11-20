@@ -3,6 +3,7 @@ export * from './reservationService';
 export * from './paymentService';
 export * from './realtimeService';
 export * from './shortlistService';
+export * from './authService';
 
 // Re-export lib services for consistency
 export { vrService } from '@/lib/vrService';

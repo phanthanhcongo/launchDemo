@@ -1,6 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useVisitTracking } from '@/hooks/useVisitTracking';
+import { VisitAction } from '@/services/visitTrackingService';
 import { Text, Image, Button } from '@/components/atoms';
 import {
   SearchBar,
@@ -29,6 +31,9 @@ import './styles/explore.css';
 
 export function ExplorePage() {
   const { t } = useTranslation();
+  
+  // Track page visit
+  useVisitTracking(VisitAction.EXPLORE_PAGE_VIEW);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 

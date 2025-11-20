@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useVisitTracking } from '@/hooks/useVisitTracking';
+import { VisitAction } from '@/services/visitTrackingService';
 import { 
   Header, 
   Hero, 
@@ -29,6 +31,9 @@ import { vrService } from '@/lib/vrService';
 export function HomePage() {
   const navigate = useNavigate();
   const [isVRExperienceOpen, setIsVRExperienceOpen] = useState(false);
+  
+  // Track page visit
+  useVisitTracking(VisitAction.HOME_PAGE_VIEW);
 
   // Scroll to contact section
   const scrollToContact = () => {

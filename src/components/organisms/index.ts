@@ -12,4 +12,5 @@ export * from './UnitList';
 export * from './UnitDetailModal';
 export * from './ValueProposition';
 export * from './UnitGrid';
+export * from './AuthLayout';
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Image } from '@/components/atoms';
-import { Navigation } from '@/components/molecules/Navigation';
+import { Navigation } from '@/components/molecules';
 import { useScrollSpy } from '@/hooks';
 import { XMarkIcon, Bars3BottomRightIcon } from '@/components/ui';
 import { cn } from '@/lib/cn';
@@ -31,7 +31,6 @@ const RIGHT_NAV_ITEMS = [
  * Logic separated: uses useScrollSpy hook for active section tracking.
  */
 export function Header({ className }: HeaderProps) {
-  const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const activeSection = useScrollSpy([
     'home',
@@ -43,15 +42,6 @@ export function Header({ className }: HeaderProps) {
     'offers',
     'contact',
   ]);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleNavClick = (href: string) => {
     const sectionId = href.replace('#', '');

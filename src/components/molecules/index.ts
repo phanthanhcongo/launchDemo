@@ -16,4 +16,5 @@ export * from './SortDropdown';
 export * from './UnitMapViewer';
 export * from './UnitCard';
 export * from './ShortlistTray';
+export * from './UserMenu';
 
