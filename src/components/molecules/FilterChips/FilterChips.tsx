@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Button, Text } from '@/components/atoms';
 import { cn } from '@/lib/cn';
 
 export interface FilterChip {
