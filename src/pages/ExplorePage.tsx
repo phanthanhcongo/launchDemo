@@ -3,9 +3,8 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useVisitTracking } from '@/hooks/useVisitTracking';
 import { VisitAction } from '@/services/visitTrackingService';
-import { Text, Image, Button } from '@/components/atoms';
+import { Image, Button } from '@/components/atoms';
 import {
-  SearchBar,
   FilterChips,
   SortDropdown,
   UnitMapViewer,
@@ -43,7 +42,7 @@ export function ExplorePage() {
 
   const { shortlistIds, toggleShortlist } = useShortlist();
 
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery] = useState('');
   const [selectedFilters, setSelectedFilters] = useState<Set<string>>(() => {
     const filters = new Set<string>();
     if (initialVillaType) filters.add(`type-${initialVillaType}`);
@@ -142,13 +141,6 @@ export function ExplorePage() {
 
   const handleUnitSelect = (unit: Unit) => setSelectedUnitId(unit.id);
   const handleShortlist = (unit: Unit) => toggleShortlist(unit.id);
-  const handleSearchUnitSelect = (unit: Unit) => {
-    setSelectedUnitId(unit.id);
-    if (viewMode === 'plan') {
-      setHoveredUnitId(unit.id);
-      setTimeout(() => setHoveredUnitId(undefined), 2000);
-    }
-  };
 
   const handleReserve = async (unit: Unit) => {
     if (unit.status !== 'available') {

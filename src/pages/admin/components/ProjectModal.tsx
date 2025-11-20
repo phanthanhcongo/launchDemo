@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { X } from 'lucide-react';
 import { Button } from '@/components/atoms';
 import { authService } from '@/services/authService';
-import { cn } from '@/lib/cn';
 
-const API_BASE = ((import.meta as any).env?.VITE_API_URL as string) || '/api';
+const API_BASE = (import.meta.env?.VITE_API_URL as string) || '/api';
 
 export interface ProjectModalProps {
   project?: any;

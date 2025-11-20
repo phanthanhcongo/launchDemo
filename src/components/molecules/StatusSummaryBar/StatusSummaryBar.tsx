@@ -2,17 +2,19 @@ import { SearchBar, UserMenu } from "@/components/molecules";
 import { cn } from "@/lib/cn";
 import { useState } from "react";
 
+export interface StatusSummaryBarProps {
+  totalUnits: number;
+  soldUnits: number;
+  heldUnits: number;
+  className?: string;
+}
+
 export function StatusSummaryBar({
   totalUnits,
   soldUnits,
   heldUnits,
   className
-}: {
-  totalUnits: number;
-  soldUnits: number;
-  heldUnits: number;
-  className?: string;
-}) {
+}: StatusSummaryBarProps) {
 
   const availableUnits = totalUnits - soldUnits - heldUnits;
   const soldPercent = Math.round((soldUnits / totalUnits) * 100);

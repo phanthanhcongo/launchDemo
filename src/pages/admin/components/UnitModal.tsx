@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { X } from 'lucide-react';
 import { Button } from '@/components/atoms';
 import { authService } from '@/services/authService';
-import { cn } from '@/lib/cn';
 
-const API_BASE = ((import.meta as any).env?.VITE_API_URL as string) || '/api';
+const API_BASE = (import.meta.env?.VITE_API_URL as string) || '/api';
 
 export interface UnitModalProps {
   unit?: any;
@@ -59,7 +58,7 @@ export function UnitModal({ unit, projects, onClose, onSuccess }: UnitModalProps
         price: parseFloat(formData.price.toString()),
         xPosition: formData.xPosition ? parseInt(formData.xPosition.toString()) : undefined,
         yPosition: formData.yPosition ? parseInt(formData.yPosition.toString()) : undefined,
-        imageUrls: formData.imageUrls ? formData.imageUrls.split('\n').filter(url => url.trim()) : undefined,
+        imageUrls: formData.imageUrls ? formData.imageUrls.split('\n').filter((url: string) => url.trim()) : undefined,
       };
 
       // Remove empty optional fields

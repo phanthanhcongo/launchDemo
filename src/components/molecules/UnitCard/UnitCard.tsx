@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Button, Text } from '@/components/atoms';
+import { Text } from '@/components/atoms';
 import { Unit, formatPrice, formatArea, getUnitStatusColor, getUnitStatusTextColor } from '@/lib/unitData';
 import { cn } from '@/lib/cn';
 import { useShortlist } from '@/hooks/useShortlist';

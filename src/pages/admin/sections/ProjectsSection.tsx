@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/atoms';
 import { authService } from '@/services/authService';
 import { AdminPagination, PaginationInfo, ProjectModal, ConfirmDialog } from '../components';
 import { cn } from '@/lib/cn';
 
-const API_BASE = ((import.meta as any).env?.VITE_API_URL as string) || '/api';
+const API_BASE = (import.meta.env?.VITE_API_URL as string) || '/api';
 
 export function ProjectsSection() {
   const [projects, setProjects] = useState<any[]>([]);
